@@ -7,6 +7,7 @@ LecarstvoOrganize *TablOrg, *AntibOrg;
 int TypeOfFunction = 0;
 int TypeOfLecarstvo = 0;
 int CountOfOrganize = 25;
+int CountOfVirus[3] = {12,9,6};
 int MassiveFight[5]={0,0,0,0,0};
 bool FlagHelper;
 
@@ -1217,6 +1218,18 @@ void MainWindow::TimerSlot_org()
                                                         int h_status2 = ui->stepen_status->height();
                                                         ui->stepen_status->setPixmap(imgStatus.scaled(w_status2, h_status2, Qt::KeepAspectRatio));
                                                     }
+
+    if ((CountOfVirus[0] == 0) || (CountOfVirus[1] == 0) || (CountOfVirus[2] == 0))
+    {
+        QPixmap imgStatus(":/resurs/img/sost_vozd.png");
+        int w_status3 = ui->stepen_status->width();
+        int h_status3 = ui->stepen_status->height();
+        ui->stepen_status->setPixmap(imgStatus.scaled(w_status3, h_status3, Qt::KeepAspectRatio));
+        QPixmap imgPerson(":/resurs/img/фаза_end.png");
+        int w_person = ui->img_person->width();
+        int h_person = ui->img_person->height();
+        ui->img_person->setPixmap(imgPerson.scaled(w_person, h_person, Qt::KeepAspectRatio));
+    }
     for (int i = 0; i < 25; i++)
     {
         switch (i)
@@ -2036,6 +2049,8 @@ void MainWindow::TimerSlot_org()
             {
             case 0:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_1->x();
@@ -2073,14 +2088,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_1->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_1->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_1->setVisible(false);
                     ui->bakt_1->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 1:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_2->x();
@@ -2117,14 +2137,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_2->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_2->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_2->setVisible(false);
                     ui->bakt_2->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 2:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_3->x();
@@ -2161,14 +2186,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_3->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_3->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_3->setVisible(false);
                     ui->bakt_3->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 3:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_4->x();
@@ -2205,14 +2235,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_4->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_4->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_4->setVisible(false);
                     ui->bakt_4->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 4:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_5->x();
@@ -2249,14 +2284,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_5->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_5->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_5->setVisible(false);
                     ui->bakt_5->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
              }
              case 5:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_6->x();
@@ -2293,14 +2333,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_6->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_6->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_6->setVisible(false);
                     ui->bakt_6->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 6:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_7->x();
@@ -2337,14 +2382,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_7->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_7->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_7->setVisible(false);
                     ui->bakt_7->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 7:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_8->x();
@@ -2381,14 +2431,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_8->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_8->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_8->setVisible(false);
                     ui->bakt_8->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 8:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_9->x();
@@ -2425,14 +2480,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_9->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_9->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_9->setVisible(false);
                     ui->bakt_9->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 9:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_10->x();
@@ -2469,14 +2529,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_10->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_10->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_10->setVisible(false);
                     ui->bakt_10->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 10:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_11->x();
@@ -2513,14 +2578,19 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_11->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_11->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_11->setVisible(false);
                     ui->bakt_11->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
             case 11:
             {
+                if (BaktOrg[i].dead == false)
+                {
                 if (BaktOrg[i].HP > 0)
                 {
                 BaktOrg[i].posX = ui->bakt_12->x();
@@ -2557,9 +2627,12 @@ void MainWindow::TimerSlot_org()
                     BaktOrg[i].size_h = ui->bakt_12->height();
                     BaktOrg[i].posX = 1080;
                     BaktOrg[i].posY = 720;
+                    BaktOrg[i].dead = true;
                     ui->bakt_12->setGeometry(BaktOrg[i].posX, BaktOrg[i].posY, BaktOrg[i].size_w, BaktOrg[i].size_h);
                     ui->bakt_12->setVisible(false);
                     ui->bakt_12->setEnabled(false);
+                    CountOfVirus[0]--;
+                }
                 }
               break;
             }
@@ -2575,6 +2648,8 @@ void MainWindow::TimerSlot_org()
             {
             case 0:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_1->x();
@@ -2613,14 +2688,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_1->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_1->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_1->setVisible(false);
                     ui->grib_1->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 1:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_2->x();
@@ -2657,14 +2737,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_2->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_2->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_2->setVisible(false);
                     ui->grib_2->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 2:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_3->x();
@@ -2701,14 +2786,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_3->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_3->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_3->setVisible(false);
                     ui->grib_3->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 3:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_4->x();
@@ -2745,14 +2835,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_4->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_4->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_4->setVisible(false);
                     ui->grib_4->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 4:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_5->x();
@@ -2789,14 +2884,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_5->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_5->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_5->setVisible(false);
                     ui->grib_5->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
              }
              case 5:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_6->x();
@@ -2833,14 +2933,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_6->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_6->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_6->setVisible(false);
                     ui->grib_6->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 6:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_7->x();
@@ -2877,14 +2982,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_7->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_7->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_7->setVisible(false);
                     ui->grib_7->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 7:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_8->x();
@@ -2921,14 +3031,19 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_8->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_8->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_8->setVisible(false);
                     ui->grib_8->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
             case 8:
             {
+                if (GribOrg[i].dead == false)
+                {
                 if (GribOrg[i].HP > 0)
                 {
                 GribOrg[i].posX = ui->grib_9->x();
@@ -2965,9 +3080,12 @@ void MainWindow::TimerSlot_org()
                     GribOrg[i].size_h = ui->grib_9->height();
                     GribOrg[i].posX = 1080;
                     GribOrg[i].posY = 720;
+                    GribOrg[i].dead = true;
                     ui->grib_9->setGeometry(GribOrg[i].posX, GribOrg[i].posY, GribOrg[i].size_w, GribOrg[i].size_h);
                     ui->grib_9->setVisible(false);
                     ui->grib_9->setEnabled(false);
+                    CountOfVirus[1]--;
+                }
                 }
               break;
             }
@@ -2983,6 +3101,8 @@ void MainWindow::TimerSlot_org()
             {
             case 0:
             {
+                if (VirusOrg[i].dead == false)
+                {
                 if (VirusOrg[i].HP > 0)
                 {
                 VirusOrg[i].posX = ui->virus_1->x();
@@ -3021,14 +3141,19 @@ void MainWindow::TimerSlot_org()
                     VirusOrg[i].size_h = ui->virus_1->height();
                     VirusOrg[i].posX = 1080;
                     VirusOrg[i].posY = 720;
+                    VirusOrg[i].dead = true;
                     ui->virus_1->setGeometry(VirusOrg[i].posX, VirusOrg[i].posY, VirusOrg[i].size_w, VirusOrg[i].size_h);
                     ui->virus_1->setVisible(false);
                     ui->virus_1->setEnabled(false);
+                    CountOfVirus[2]--;
+                }
                 }
               break;
             }
             case 1:
             {
+                if (VirusOrg[i].dead == false)
+                {
                 if (VirusOrg[i].HP > 0)
                 {
                 VirusOrg[i].posX = ui->virus_2->x();
@@ -3065,14 +3190,19 @@ void MainWindow::TimerSlot_org()
                     VirusOrg[i].size_h = ui->virus_2->height();
                     VirusOrg[i].posX = 1080;
                     VirusOrg[i].posY = 720;
+                    VirusOrg[i].dead = true;
                     ui->virus_2->setGeometry(VirusOrg[i].posX, VirusOrg[i].posY, VirusOrg[i].size_w, VirusOrg[i].size_h);
                     ui->virus_2->setVisible(false);
                     ui->virus_2->setEnabled(false);
+                    CountOfVirus[2]--;
+                }
                 }
               break;
             }
             case 2:
             {
+                if (VirusOrg[i].dead == false)
+                {
                 if (VirusOrg[i].HP > 0)
                 {
                 VirusOrg[i].posX = ui->virus_3->x();
@@ -3109,14 +3239,19 @@ void MainWindow::TimerSlot_org()
                     VirusOrg[i].size_h = ui->virus_3->height();
                     VirusOrg[i].posX = 1080;
                     VirusOrg[i].posY = 720;
+                    VirusOrg[i].dead = true;
                     ui->virus_3->setGeometry(VirusOrg[i].posX, VirusOrg[i].posY, VirusOrg[i].size_w, VirusOrg[i].size_h);
                     ui->virus_3->setVisible(false);
                     ui->virus_3->setEnabled(false);
+                    CountOfVirus[2]--;
+                }
                 }
               break;
             }
             case 3:
             {
+                if (VirusOrg[i].dead == false)
+                {
                 if (VirusOrg[i].HP > 0)
                 {
                 VirusOrg[i].posX = ui->virus_4->x();
@@ -3153,14 +3288,19 @@ void MainWindow::TimerSlot_org()
                     VirusOrg[i].size_h = ui->virus_4->height();
                     VirusOrg[i].posX = 1080;
                     VirusOrg[i].posY = 720;
+                    VirusOrg[i].dead = true;
                     ui->virus_4->setGeometry(VirusOrg[i].posX, VirusOrg[i].posY, VirusOrg[i].size_w, VirusOrg[i].size_h);
                     ui->virus_4->setVisible(false);
                     ui->virus_4->setEnabled(false);
+                    CountOfVirus[2]--;
+                }
                 }
               break;
             }
             case 4:
             {
+                if (VirusOrg[i].dead == false)
+                {
                 if (VirusOrg[i].HP > 0)
                 {
                 VirusOrg[i].posX = ui->virus_5->x();
@@ -3197,14 +3337,19 @@ void MainWindow::TimerSlot_org()
                     VirusOrg[i].size_h = ui->virus_5->height();
                     VirusOrg[i].posX = 1080;
                     VirusOrg[i].posY = 720;
+                    VirusOrg[i].dead = true;
                     ui->virus_5->setGeometry(VirusOrg[i].posX, VirusOrg[i].posY, VirusOrg[i].size_w, VirusOrg[i].size_h);
                     ui->virus_5->setVisible(false);
                     ui->virus_5->setEnabled(false);
+                    CountOfVirus[2]--;
+                }
                 }
               break;
              }
              case 5:
             {
+                if (VirusOrg[i].dead == false)
+                {
                 if (VirusOrg[i].HP > 0)
                 {
                 VirusOrg[i].posX = ui->virus_6->x();
@@ -3241,9 +3386,12 @@ void MainWindow::TimerSlot_org()
                     VirusOrg[i].size_h = ui->virus_6->height();
                     VirusOrg[i].posX = 1080;
                     VirusOrg[i].posY = 720;
+                    VirusOrg[i].dead = true;
                     ui->virus_6->setGeometry(VirusOrg[i].posX, VirusOrg[i].posY, VirusOrg[i].size_w, VirusOrg[i].size_h);
                     ui->virus_6->setVisible(false);
                     ui->virus_6->setEnabled(false);
+                    CountOfVirus[2]--;
+                }
                 }
               break;
             }

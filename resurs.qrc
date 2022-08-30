@@ -54,5 +54,6 @@
         <file>img/sost_smert.png</file>
         <file>img/sost_ujas.png</file>
         <file>img/name_ots.png</file>
+        <file>img/sost_vozd.png</file>
     </qresource>
 </RCC>
