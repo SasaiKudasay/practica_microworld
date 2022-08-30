@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Virus Evolution</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resurs.qrc">
+    <normaloff>:/resurs/img/вирус_1.png</normaloff>:/resurs/img/вирус_1.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="img_flora">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>659</width>
+      <height>472</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_bakt">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>150</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_grib">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>500</y>
+      <width>150</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_virus">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>500</y>
+      <width>150</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_tabl">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>500</y>
+      <width>150</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_antib">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>613</y>
+      <width>150</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_person">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>124</y>
+      <width>351</width>
+      <height>472</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_state">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>613</y>
+      <width>351</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_tag">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>8</y>
+      <width>356</width>
+      <height>114</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_1">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>230</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>170</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>220</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_5">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>220</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_6">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>230</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>190</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_8">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_9">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>170</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>170</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_11">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>160</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_12">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>230</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_13">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>210</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_14">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_15">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_16">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>230</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_17">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>160</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_18">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>100</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_19">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>180</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_20">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>210</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_21">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>220</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_22">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>210</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_23">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>190</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_24">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_mic_org_25">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="virus_1">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>170</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="virus_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="virus_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>180</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="virus_4">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>180</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="virus_5">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>190</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="virus_6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>190</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_1">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>180</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>160</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>190</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>180</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>190</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_6">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>160</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_7">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>180</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_8">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>190</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grib_9">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>210</y>
+      <width>27</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_1">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>160</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>180</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_4">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>120</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_5">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>140</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_6">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_7">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>200</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_8">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>150</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_9">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>130</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_10">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>190</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_11">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bakt_12">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>200</y>
+      <width>23</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tabl_1">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>170</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tabl_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>190</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tabl_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>230</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tabl_4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tabl_5">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>220</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="antib_1">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>250</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="antib_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>190</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="antib_3">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="antib_4">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>160</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="antib_5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>140</y>
+      <width>25</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>640</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="front_site">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1080</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="start">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>570</y>
+      <width>312</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bolez_status">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>680</y>
+      <width>150</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stepen_status">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>655</y>
+      <width>102</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>img_flora</zorder>
+   <zorder>img_bakt</zorder>
+   <zorder>img_grib</zorder>
+   <zorder>img_virus</zorder>
+   <zorder>img_tabl</zorder>
+   <zorder>img_antib</zorder>
+   <zorder>img_person</zorder>
+   <zorder>img_state</zorder>
+   <zorder>img_tag</zorder>
+   <zorder>img_mic_org_1</zorder>
+   <zorder>img_mic_org_2</zorder>
+   <zorder>img_mic_org_3</zorder>
+   <zorder>img_mic_org_4</zorder>
+   <zorder>img_mic_org_5</zorder>
+   <zorder>img_mic_org_6</zorder>
+   <zorder>img_mic_org_7</zorder>
+   <zorder>img_mic_org_8</zorder>
+   <zorder>img_mic_org_9</zorder>
+   <zorder>img_mic_org_10</zorder>
+   <zorder>img_mic_org_11</zorder>
+   <zorder>img_mic_org_12</zorder>
+   <zorder>img_mic_org_13</zorder>
+   <zorder>img_mic_org_14</zorder>
+   <zorder>img_mic_org_15</zorder>
+   <zorder>img_mic_org_16</zorder>
+   <zorder>img_mic_org_17</zorder>
+   <zorder>img_mic_org_18</zorder>
+   <zorder>img_mic_org_19</zorder>
+   <zorder>img_mic_org_20</zorder>
+   <zorder>img_mic_org_21</zorder>
+   <zorder>img_mic_org_22</zorder>
+   <zorder>img_mic_org_23</zorder>
+   <zorder>img_mic_org_24</zorder>
+   <zorder>img_mic_org_25</zorder>
+   <zorder>virus_1</zorder>
+   <zorder>virus_2</zorder>
+   <zorder>virus_3</zorder>
+   <zorder>virus_4</zorder>
+   <zorder>virus_5</zorder>
+   <zorder>virus_6</zorder>
+   <zorder>grib_1</zorder>
+   <zorder>grib_2</zorder>
+   <zorder>grib_3</zorder>
+   <zorder>grib_4</zorder>
+   <zorder>grib_5</zorder>
+   <zorder>grib_6</zorder>
+   <zorder>grib_7</zorder>
+   <zorder>grib_8</zorder>
+   <zorder>grib_9</zorder>
+   <zorder>bakt_1</zorder>
+   <zorder>bakt_2</zorder>
+   <zorder>bakt_3</zorder>
+   <zorder>bakt_4</zorder>
+   <zorder>bakt_5</zorder>
+   <zorder>bakt_6</zorder>
+   <zorder>bakt_7</zorder>
+   <zorder>bakt_8</zorder>
+   <zorder>bakt_9</zorder>
+   <zorder>bakt_10</zorder>
+   <zorder>bakt_11</zorder>
+   <zorder>bakt_12</zorder>
+   <zorder>tabl_1</zorder>
+   <zorder>tabl_2</zorder>
+   <zorder>tabl_3</zorder>
+   <zorder>tabl_4</zorder>
+   <zorder>tabl_5</zorder>
+   <zorder>antib_1</zorder>
+   <zorder>antib_2</zorder>
+   <zorder>antib_3</zorder>
+   <zorder>antib_4</zorder>
+   <zorder>antib_5</zorder>
+   <zorder>label</zorder>
+   <zorder>bolez_status</zorder>
+   <zorder>stepen_status</zorder>
+   <zorder>front_site</zorder>
+   <zorder>start</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resurs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
